@@ -50,5 +50,12 @@ class ItemController extends Controller
         return redirect()->route('item.index');
     }
 
+    public function destroy($id){
+        $item = Item::find($id);
+
+        $item->delete($item);
+
+        return redirect()->route('item.index');
+    }
 
 }
