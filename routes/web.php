@@ -23,4 +23,7 @@ Route::get('/index', [ItemController::class, 'index'])->name('item.index');
 
 Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
 Route::post('/item', [ItemController::class, 'store'])->name('item.store');
-Route::gett('/item/{d}/edit', [ItemController::class, 'edit'])->name('item.edit');
+
+Route::get('/item/{id}/edit', [ItemController::class, 'edit'])->name('item.edit');
+Route::put('/item/{id}', [ItemController::class, 'update'])->name('item.update');
+
