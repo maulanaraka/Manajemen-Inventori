@@ -2,18 +2,18 @@
 
 @section('content')
 <div class="p-4 justify-center">
-    <h1 class="text-3xl font-bold text-center">
+    <h1 class="text-5xl font-bold text-center p-10">
         Manajemen Inventori
     </h1>
-    <div class="text-center mt-4">
+    <div class="text-center mt-4 pb-4">
         <a href="{{ route('item.create') }}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Tambah Barang</a>
     </div>
 </div>
-<div class="text-center bg-slate-100 rounded-md">
-    <div class="w-auto p-4 mx-auto">
+<div class="bg-slate-100">
+    <div class="p-4 text-center">
         <table class="bg-white rounded-md p-4 mx-auto">
-            <thead class="bg-blue-700 rounded-md">
-                <tr>
+            <thead class="bg-blue-700">
+                <tr">
                     <th class="px-5 py-4 font-medium text-white">Nama Barang</th>
                     <th class="px-5 py-4 font-medium text-white">Jenis Barang</th>
                     <th class="px-5 py-4 font-medium text-white">Jumlah Barang</th>
