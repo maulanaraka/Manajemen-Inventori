@@ -6,8 +6,7 @@
         Manajemen Inventori
     </h1>
     <div class="text-center mt-4">
-        {{-- <a href="{{ route('item.create') }}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Tambah Barang</a> --}}
-        <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Tambah Barang</a>
+        <a href="{{ route('item.create') }}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Tambah Barang</a>
     </div>
 </div>
 <div class="text-center bg-slate-100 rounded-md">
@@ -31,7 +30,7 @@
                         <td class="px-5 py-4 font-medium text-gray-700">{{ $item->tanggalMasukBarang }}</td>
                         <td class="px-5 py-4 font-medium text-gray-700 whitespace-nowrap">
                             <div class="flex">
-                                {{-- <a href="{{ route('item.edit', ['item' => $item->id]) }}"> --}}
+                                <a href="{{ route('item.edit', ['id' => $item->id]) }}">
                                     <button class="ml-2 rounded-md bg-blue-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800">
                                         Edit
                                     </button>

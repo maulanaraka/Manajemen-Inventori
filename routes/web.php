@@ -18,10 +18,9 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/index', function () {
-    return view('item.index');
-});
 
-Route::get('/index', [ItemController::class, 'index']);
+Route::get('/index', [ItemController::class, 'index'])->name('item.index');
 
-Route::get('/item/create', [ItemController::class, 'item.create']);
+Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
+Route::post('/item', [ItemController::class, 'store'])->name('item.store');
+Route::gett('/item/{d}/edit', [ItemController::class, 'edit'])->name('item.edit');

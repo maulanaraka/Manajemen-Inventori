@@ -7,8 +7,7 @@
         </h1>
     </div>
     <div class="align-center bg-slate-100 rounded-md w-auto p-4">
-        {{-- <form action="{{ route('barang.store') }}" method="POST"> --}}
-        <form action="#" method="POST">
+        <form action="{{ route('item.store') }}" method="POST">
             @csrf
 
             <div class="mb-4">
